@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "about": "Men haqimda",
+    "skills": "Qobiliyatlar",
+    "experience": "Tajriba",
+    "projects": "Loyihalar",
+    "contact": "Bog'lanish"
+  },
+  "hero": {
+    "greeting": "Assalamu alaykum, men",
+    "name": "Davronbek Nabijonov",
+    "title": "Fullstack Developer",
+    "subtitle": "Toza kod va diqqat bilan zamonaviy, responsive veb-tajribalar yaratish.",
+    "cta": "Mening Ishlarini Ko'rish",
+    "contact": "Menga Yozing"
+  },
+  "about": {
+    "title": "Men Haqimda",
+    "description": "Men zamonaviy veb-texnologiyalarga ega bo'lgan ishtiyoqli fullstack dasturchiman. Scalable, foydalanuvchi-dostvand ilovalar yarataman, toza arxitektura va eng yaxshi amaliyotlarga e'tibor qarataman. Frontend va backend rivojlantirishda tajribaga ega bo'lib, ishning ehtiyojlarini qondiruvchi va foydalanuvchining kutishlaridan oshib ketuvchi yechimlarni taqdim etaman.",
+    "location": "📍 O'zbekiston, Fargona"
+  },
+  "skills": {
+    "title": "Qobiliyatlar va Tajribalar",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Ma'lumotlar Bazalari",
+    "languages": "Tillar",
+    "frontendSkills": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"],
+    "backendSkills": ["Node.js", "Express", "Python", "REST APIs", "GraphQL"],
+    "databaseSkills": ["MongoDB", "PostgreSQL", "Firebase", "Redis"],
+    "languageSkills": ["O'zbek", "Rus", "English"]
+  },
+  "experience": {
+    "title": "Ish Tajribasi",
+    "projects": [
+      {
+        "company": "Dezburxoro",
+        "position": "Fullstack Developer",
+        "description": "Zamonaviy texnologiya stacki bilan e-commerce platformasini ishlab chiqdi"
+      },
+      {
+        "company": "Nippon",
+        "position": "Frontend Developer",
+        "description": "Responsive UI komponentlar va sahifalarni yaratdi"
+      },
+      {
+        "company": "Limsa",
+        "position": "Fullstack Developer",
+        "description": "Butun veb-ilovaning yechimlarini amalga oshirdi"
+      },
+      {
+        "company": "Fatvo",
+        "position": "Full Stack Developer",
+        "description": "Yuridik xizmatlar platformasini ishlab chiqdi"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Asosiy Loyihalar",
+    "viewMore": "Loyihani Ko'rish",
+    "portfolio": [
+      {
+        "name": "Dezburxoro",
+        "description": "Ilg'or xususiyatlar bilan zamonaviy e-commerce platformasi",
+        "link": "https://www.dezbuxoro.uz/",
+        "tags": ["React", "Node.js", "MongoDB"]
+      },
+      {
+        "name": "Nippon",
+        "description": "Zamonaviy dizayn bilan professional biznes veb-sayt",
+        "link": "https://www.nippon.com.uz/",
+        "tags": ["Next.js", "Tailwind CSS", "TypeScript"]
+      },
+      {
+        "name": "Limsa",
+        "description": "Toliq funktsional veb-ilova platformasi",
+        "link": "https://www.limsa.uz/",
+        "tags": ["React", "GraphQL", "PostgreSQL"]
+      },
+      {
+        "name": "Fatvo",
+        "description": "Foydalanuvchi boshqarishi bilan yuridik xizmatlar platformasi",
+        "link": "https://fatvo.uz/lat",
+        "tags": ["Next.js", "Firebase", "Tailwind CSS"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Menga Murojaat Qiling",
+    "description": "Fikringizda loyiha bor? Menga xat qoldiring. Men har doim yangi imkoniyatlar haqida gapirish uchun qiziqaman.",
+    "form": {
+      "name": "Sizning Ismingiz",
+      "phone": "Telefon Raqami",
+      "message": "Sizning Xabaringiz",
+      "submit": "Xabar Yuborish",
+      "sending": "Yuborilmoqda...",
+      "success": "Xabar muvaffaqiyatli yuborildi!",
+      "error": "Xabar yuborilmadi. Iltimos, qayta urining."
+    },
+    "contact_info": {
+      "phone": "Telefon",
+      "email": "Email",
+      "telegram": "Telegram",
+      "address": "Manzil"
+    }
+  },
+  "footer": {
+    "rights": "Barcha huquqlar saqlanib qoladi.",
+    "followMe": "Meni Kuzatish"
+  }
+}

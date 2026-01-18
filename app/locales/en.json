@@ -1,0 +1,112 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Davronbek Nabijonov",
+    "title": "Fullstack Developer",
+    "subtitle": "Building modern, responsive web experiences with clean code and attention to detail.",
+    "cta": "View My Work",
+    "contact": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a passionate fullstack developer with expertise in modern web technologies. I create scalable, user-friendly applications with a focus on clean architecture and best practices. With experience in frontend and backend development, I deliver comprehensive solutions that meet business needs and exceed user expectations.",
+    "location": "📍 Uzbekistan, Fergana"
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Databases",
+    "languages": "Languages",
+    "frontendSkills": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"],
+    "backendSkills": ["Node.js", "Express", "Python", "REST APIs", "GraphQL"],
+    "databaseSkills": ["MongoDB", "PostgreSQL", "Firebase", "Redis"],
+    "languageSkills": ["Uzbek", "Russian", "English"]
+  },
+  "experience": {
+    "title": "Work Experience",
+    "projects": [
+      {
+        "company": "Dezburxoro",
+        "position": "Fullstack Developer",
+        "description": "Developed e-commerce platform with modern tech stack"
+      },
+      {
+        "company": "Nippon",
+        "position": "Frontend Developer",
+        "description": "Built responsive UI components and pages"
+      },
+      {
+        "company": "Limsa",
+        "position": "Fullstack Developer",
+        "description": "Implemented complete web application solutions"
+      },
+      {
+        "company": "Fatvo",
+        "position": "Full Stack Developer",
+        "description": "Developed legal services platform"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "viewMore": "View Project",
+    "portfolio": [
+      {
+        "name": "Dezburxoro",
+        "description": "Modern e-commerce platform with advanced features",
+        "link": "https://www.dezbuxoro.uz/",
+        "tags": ["React", "Node.js", "MongoDB"]
+      },
+      {
+        "name": "Nippon",
+        "description": "Professional business website with modern design",
+        "link": "https://www.nippon.com.uz/",
+        "tags": ["Next.js", "Tailwind CSS", "TypeScript"]
+      },
+      {
+        "name": "Limsa",
+        "description": "Full-featured web application platform",
+        "link": "https://www.limsa.uz/",
+        "tags": ["React", "GraphQL", "PostgreSQL"]
+      },
+      {
+        "name": "Fatvo",
+        "description": "Legal services platform with user management",
+        "link": "https://fatvo.uz/lat",
+        "tags": ["Next.js", "Firebase", "Tailwind CSS"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Have a project in mind? Feel free to reach out. I'm always interested in hearing about new opportunities.",
+    "form": {
+      "name": "Your Name",
+      "phone": "Phone Number",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "contact_info": {
+      "phone": "Phone",
+      "email": "Email",
+      "telegram": "Telegram",
+      "address": "Location"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "followMe": "Follow Me"
+  }
+}

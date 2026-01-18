@@ -32,6 +32,7 @@ App (Page.tsx)
 We use **Zustand** for lightweight state management:
 
 1. **ThemeContext** - Dark/Light mode
+
    - Stores in: `localStorage` (key: `theme-storage`)
    - Accessed via: `useThemeStore()`
 
@@ -42,12 +43,14 @@ We use **Zustand** for lightweight state management:
 ### Translation System
 
 **useTranslation Hook:**
+
 ```typescript
 const { t, language } = useTranslation();
-const text = t('hero.greeting'); // Returns string or array
+const text = t("hero.greeting"); // Returns string or array
 ```
 
 **Locale Files:**
+
 - `/app/locales/en.json` - English translations
 - `/app/locales/uz.json` - Uzbek translations
 
@@ -58,6 +61,7 @@ const text = t('hero.greeting'); // Returns string or array
 **Route:** `POST /api/contact`
 
 **Request Body:**
+
 ```json
 {
   "name": "string",
@@ -67,6 +71,7 @@ const text = t('hero.greeting'); // Returns string or array
 ```
 
 **Response (Success):**
+
 ```json
 {
   "success": true,
@@ -75,6 +80,7 @@ const text = t('hero.greeting'); // Returns string or array
 ```
 
 **Response (Error):**
+
 ```json
 {
   "error": "Failed to process request"
@@ -82,6 +88,7 @@ const text = t('hero.greeting'); // Returns string or array
 ```
 
 **Implementation:**
+
 - Validates input
 - Sends to Telegram Bot API
 - Requires environment variables:
@@ -93,6 +100,7 @@ const text = t('hero.greeting'); // Returns string or array
 ### Tailwind CSS Configuration
 
 Default configuration includes:
+
 - Color palette (purple, pink, red, gray)
 - Responsive breakpoints (sm, md, lg, xl)
 - Transition utilities
@@ -101,6 +109,7 @@ Default configuration includes:
 ### Custom CSS
 
 Located in `/app/globals.css`:
+
 - Smooth scroll behavior
 - Custom scrollbar styling
 - Selection colors
@@ -111,12 +120,14 @@ Located in `/app/globals.css`:
 ### Framer Motion Integration
 
 Used in all sections with:
+
 - Variants for animations
 - Container stagger effects
 - Scroll-triggered animations
 - Hover effects
 
 **Example Pattern:**
+
 ```typescript
 const containerVariants = {
   hidden: { opacity: 0 },

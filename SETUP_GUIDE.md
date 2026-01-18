@@ -7,6 +7,7 @@ Your modern personal portfolio website is fully built and ready to use!
 ## 📦 What's Included
 
 ### ✨ Core Features Implemented
+
 - ✅ Responsive design (mobile, tablet, desktop)
 - ✅ Dark/Light mode toggle with persistent storage
 - ✅ Multi-language support (English & Uzbek)
@@ -16,6 +17,7 @@ Your modern personal portfolio website is fully built and ready to use!
 - ✅ SEO-friendly structure
 
 ### 📄 Pages & Sections
+
 1. **Hero Section** - Name, title, and call-to-action buttons
 2. **About Section** - Bio with statistics cards
 3. **Skills Section** - Categorized skills (Frontend, Backend, Databases, Languages)
@@ -26,6 +28,7 @@ Your modern personal portfolio website is fully built and ready to use!
 8. **Footer** - Social links and quick navigation
 
 ### 🛠️ Technology Stack
+
 - Next.js 16.1.2 with Turbopack
 - TypeScript for type safety
 - Tailwind CSS for styling
@@ -39,6 +42,7 @@ Your modern personal portfolio website is fully built and ready to use!
 ### 1. Development Server
 
 Start the development server:
+
 ```bash
 cd /home/zero/Projects/knowladge/portfolio/fd
 npm run dev
@@ -53,6 +57,7 @@ To enable contact form notifications:
 1. Create a bot: Message [@BotFather](https://t.me/botfather) with `/newbot`
 2. Get your Chat ID: Message your bot, then check `https://api.telegram.org/bot<TOKEN>/getUpdates`
 3. Update `.env.local`:
+
 ```
 TELEGRAM_BOT_TOKEN=your_token_here
 TELEGRAM_CHAT_ID=your_chat_id_here
@@ -61,6 +66,7 @@ TELEGRAM_CHAT_ID=your_chat_id_here
 ### 3. Customize Your Information
 
 Edit `/app/locales/en.json` and `/app/locales/uz.json` to update:
+
 - Your name and title
 - Bio and about section
 - Skills and expertise
@@ -90,23 +96,29 @@ app/
 ## 🎨 Customization Guide
 
 ### Change Colors
+
 Edit Tailwind classes in components:
+
 - Primary gradient: `from-purple-500 to-pink-500`
 - Update in: Navbar, Hero, buttons, etc.
 
 Example:
+
 ```tsx
 // Change from purple to blue
-className="from-blue-500 to-cyan-500"
+className = "from-blue-500 to-cyan-500";
 ```
 
 ### Add More Languages
+
 1. Create `/app/locales/fr.json` (example)
 2. Update `useLanguageStore` in `/app/context/LanguageContext.tsx`
 3. Add button to Navbar
 
 ### Update Skills
+
 Edit `/app/locales/en.json`:
+
 ```json
 "skills": {
   "frontendSkills": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"],
@@ -115,7 +127,9 @@ Edit `/app/locales/en.json`:
 ```
 
 ### Add Portfolio Projects
+
 Edit `/app/locales/en.json`:
+
 ```json
 "portfolio": [
   {
@@ -132,6 +146,7 @@ Edit `/app/locales/en.json`:
 ### Deploy to Vercel (Recommended)
 
 1. Push to GitHub:
+
 ```bash
 git remote add origin https://github.com/YOUR_USERNAME/your-repo.git
 git push -u origin main
@@ -145,6 +160,7 @@ git push -u origin main
 5. Deploy!
 
 ### Deploy to Other Platforms
+
 - Netlify, AWS Amplify, Docker, or self-hosted servers
 - All support Next.js deployment
 
@@ -188,14 +204,17 @@ npm run lint
 ### Common Issues
 
 **Issue:** Translations not showing?
+
 - Clear browser cache (Ctrl+F5)
 - Check localStorage in DevTools
 
 **Issue:** Dark mode not persisting?
+
 - Check browser localStorage is enabled
 - Verify Zustand middleware is working
 
 **Issue:** Contact form not sending?
+
 - Verify Telegram bot token and chat ID
 - Check `.env.local` has correct values
 - Look at browser console for errors
@@ -218,6 +237,7 @@ npm run lint
 ## 🚀 Ready to Launch?
 
 Your portfolio is production-ready! Time to:
+
 1. ✏️ Customize with your information
 2. 🤖 Setup Telegram bot
 3. 🚀 Deploy to Vercel

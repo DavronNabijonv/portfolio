@@ -2,13 +2,11 @@
 
 import { useState } from "react";
 import { useTranslation } from "../../i18n/useTranslation";
-import { useThemeStore } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import { Mail, Phone, Send, MessageCircle } from "lucide-react";
 
 export default function ContactSection() {
   const { t } = useTranslation();
-  const { isDark } = useThemeStore();
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -101,9 +99,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className={`py-20 px-4 sm:px-6 lg:px-8 ${
-        isDark ? "bg-gray-800/50" : "bg-gray-50"
-      } transition-colors duration-300`}
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50 transition-colors duration-300"
     >
       <div className="max-w-4xl mx-auto">
         <motion.div
@@ -115,7 +111,7 @@ export default function ContactSection() {
           {/* Title */}
           <motion.h2
             variants={itemVariants}
-            className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent"
+            className="text-4xl sm:text-5xl font-bold mb-6 bg-linear-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent"
           >
             {t("contact.title")}
           </motion.h2>
@@ -123,9 +119,7 @@ export default function ContactSection() {
           {/* Subtitle */}
           <motion.p
             variants={itemVariants}
-            className={`text-lg mb-12 ${
-              isDark ? "text-gray-300" : "text-gray-700"
-            }`}
+            className="text-lg mb-12 text-gray-300"
           >
             {t("contact.description")}
           </motion.p>
@@ -142,26 +136,16 @@ export default function ContactSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ x: 10 }}
-                    className={`flex items-center gap-4 p-4 rounded-lg transition-all ${
-                      isDark
-                        ? "bg-gray-700/50 hover:bg-gray-700"
-                        : "bg-white hover:bg-gray-100"
-                    }`}
+                    className="flex items-center gap-4 p-4 rounded-lg transition-all bg-gray-700/50 hover:bg-gray-700"
                   >
-                    <div className="p-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg text-white">
+                    <div className="p-3 bg-linear-to-r from-purple-500 to-pink-500 rounded-lg text-white">
                       <Icon size={24} />
                     </div>
                     <div>
                       <p className="text-sm text-purple-500 font-medium">
                         {info.label}
                       </p>
-                      <p
-                        className={`font-semibold ${
-                          isDark ? "text-white" : "text-gray-900"
-                        }`}
-                      >
-                        {info.value}
-                      </p>
+                      <p className="font-semibold text-white">{info.value}</p>
                     </div>
                   </motion.a>
                 );
@@ -181,11 +165,7 @@ export default function ContactSection() {
                 value={formData.name}
                 onChange={handleInputChange}
                 required
-                className={`w-full px-4 py-3 rounded-lg border-2 transition-all ${
-                  isDark
-                    ? "bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-purple-500"
-                    : "bg-white border-gray-300 text-gray-900 placeholder-gray-500 focus:border-purple-500"
-                } focus:outline-none`}
+                className="w-full px-4 py-3 rounded-lg border-2 transition-all bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-purple-500 focus:outline-none"
               />
 
               <input
@@ -195,11 +175,7 @@ export default function ContactSection() {
                 value={formData.phone}
                 onChange={handleInputChange}
                 required
-                className={`w-full px-4 py-3 rounded-lg border-2 transition-all ${
-                  isDark
-                    ? "bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-purple-500"
-                    : "bg-white border-gray-300 text-gray-900 placeholder-gray-500 focus:border-purple-500"
-                } focus:outline-none`}
+                className="w-full px-4 py-3 rounded-lg border-2 transition-all bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-purple-500 focus:outline-none"
               />
 
               <textarea
@@ -209,11 +185,7 @@ export default function ContactSection() {
                 onChange={handleInputChange}
                 required
                 rows={5}
-                className={`w-full px-4 py-3 rounded-lg border-2 transition-all resize-none ${
-                  isDark
-                    ? "bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-purple-500"
-                    : "bg-white border-gray-300 text-gray-900 placeholder-gray-500 focus:border-purple-500"
-                } focus:outline-none`}
+                className="w-full px-4 py-3 rounded-lg border-2 transition-all resize-none bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-purple-500 focus:outline-none"
               />
 
               {/* Status Messages */}
@@ -243,7 +215,7 @@ export default function ContactSection() {
                 disabled={loading}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg flex items-center justify-center gap-2 hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-3 bg-linear-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg flex items-center justify-center gap-2 hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <Send size={20} />
                 {loading ? t("contact.form.sending") : t("contact.form.submit")}

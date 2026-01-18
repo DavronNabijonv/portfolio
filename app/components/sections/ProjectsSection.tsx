@@ -1,14 +1,12 @@
 "use client";
 
 import { useTranslation } from "../../i18n/useTranslation";
-import { useThemeStore } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
 
 export default function ProjectsSection() {
   const { t } = useTranslation();
-  const { isDark } = useThemeStore();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -32,9 +30,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className={`py-20 px-4 sm:px-6 lg:px-8 ${
-        isDark ? "bg-gray-900" : "bg-white"
-      } transition-colors duration-300`}
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900 transition-colors duration-300"
     >
       <div className="max-w-6xl mx-auto">
         <motion.div
@@ -46,21 +42,22 @@ export default function ProjectsSection() {
           {/* Title */}
           <motion.h2
             variants={itemVariants}
-            className="text-4xl sm:text-5xl font-bold mb-16 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent"
+            className="text-4xl sm:text-5xl font-bold mb-16 bg-linear-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent"
           >
             {t("projects.title")}
           </motion.h2>
 
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {(Array.isArray(t('projects.portfolio')) ? t('projects.portfolio') : []).map((project: any, index: number) => (
+            {(Array.isArray(t("projects.portfolio"))
+              ? t("projects.portfolio")
+              : []
+            ).map((project: any, index: number) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -10 }}
-                className={`rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ${
-                  isDark ? "bg-gray-800" : "bg-gray-50"
-                }`}
+                className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 bg-gray-800"
               >
                 {/* Project Content */}
                 <div className="p-6 h-full flex flex-col">
@@ -68,11 +65,7 @@ export default function ProjectsSection() {
                     {project.name}
                   </h3>
 
-                  <p
-                    className={`mb-6 flex-grow ${
-                      isDark ? "text-gray-300" : "text-gray-700"
-                    }`}
-                  >
+                  <p className="mb-6 grow text-gray-300">
                     {project.description}
                   </p>
 
@@ -81,11 +74,7 @@ export default function ProjectsSection() {
                     {project.tags.map((tag: string) => (
                       <span
                         key={tag}
-                        className={`text-xs px-3 py-1 rounded-full ${
-                          isDark
-                            ? "bg-purple-900/30 text-purple-300"
-                            : "bg-purple-100 text-purple-700"
-                        }`}
+                        className="text-xs px-3 py-1 rounded-full bg-purple-900/30 text-purple-300"
                       >
                         {tag}
                       </span>
@@ -100,7 +89,7 @@ export default function ProjectsSection() {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:shadow-lg transition-shadow"
+                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-linear-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:shadow-lg transition-shadow"
                     >
                       {t("projects.viewMore")}
                       <ExternalLink size={18} />

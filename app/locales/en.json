@@ -10,14 +10,14 @@
   "hero": {
     "greeting": "Hello, I'm",
     "name": "Davronbek Nabijonov",
-    "title": "Fullstack Developer",
+    "title": "Frontend Developer",
     "subtitle": "Building modern, responsive web experiences with clean code and attention to detail.",
     "cta": "View My Work",
     "contact": "Get In Touch"
   },
   "about": {
     "title": "About Me",
-    "description": "I'm a passionate fullstack developer with expertise in modern web technologies. I create scalable, user-friendly applications with a focus on clean architecture and best practices. With experience in frontend and backend development, I deliver comprehensive solutions that meet business needs and exceed user expectations.",
+    "description": "I'm a passionate Frontend developer with expertise in modern web technologies. I create scalable, user-friendly applications with a focus on clean architecture and best practices. With experience in frontend and backend development, I deliver comprehensive solutions that meet business needs and exceed user expectations.",
     "location": "📍 Uzbekistan, Fergana"
   },
   "skills": {
@@ -36,7 +36,7 @@
     "projects": [
       {
         "company": "Dezburxoro",
-        "position": "Fullstack Developer",
+        "position": "Frontend Developer",
         "description": "Developed e-commerce platform with modern tech stack"
       },
       {
@@ -46,7 +46,7 @@
       },
       {
         "company": "Limsa",
-        "position": "Fullstack Developer",
+        "position": "Frontend Developer",
         "description": "Implemented complete web application solutions"
       },
       {

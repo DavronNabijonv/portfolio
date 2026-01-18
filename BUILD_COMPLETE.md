@@ -8,79 +8,85 @@
 ✨ FEATURES IMPLEMENTED
 
 ✅ Responsive Design
-   • Mobile (< 640px) - Optimized
-   • Tablet (640px - 1024px) - Optimized
-   • Desktop (> 1024px) - Optimized
-   • All breakpoints tested and working
+• Mobile (< 640px) - Optimized
+• Tablet (640px - 1024px) - Optimized
+• Desktop (> 1024px) - Optimized
+• All breakpoints tested and working
 
 ✅ Dark/Light Mode Toggle
-   • Smooth transitions
-   • Persistent storage (localStorage)
-   • System preference detection
-   • Available on Navbar
+• Smooth transitions
+• Persistent storage (localStorage)
+• System preference detection
+• Available on Navbar
 
 ✅ Multi-Language Support
-   • English (en)
-   • Uzbek (uz)
-   • Language switcher on Navbar
-   • Persistent language selection
-   • Complete translations for all sections
+• English (en)
+• Uzbek (uz)
+• Language switcher on Navbar
+• Persistent language selection
+• Complete translations for all sections
 
 ✅ Smooth Animations
-   • Framer Motion integrated
-   • Scroll-triggered animations
-   • Staggered children animations
-   • Hover effects on interactive elements
-   • Smooth page transitions
+• Framer Motion integrated
+• Scroll-triggered animations
+• Staggered children animations
+• Hover effects on interactive elements
+• Smooth page transitions
 
 ✅ Professional Sections
-   1. Hero Section
-      - Name: Davronbek Nabijonov
-      - Title: Fullstack Developer
-      - Call-to-action buttons
-      - Scroll indicator animation
-   
-   2. About Section
-      - Professional bio
-      - Location information
-      - Statistics cards
-      - Responsive layout
-   
-   3. Skills Section
-      - Frontend skills (React, Next.js, TypeScript, Tailwind, etc.)
-      - Backend skills (Node.js, Express, Python, REST/GraphQL)
-      - Database skills (MongoDB, PostgreSQL, Firebase, Redis)
-      - Language skills (Uzbek, Russian, English)
-      - Categorized display
-   
-   4. Experience Section
-      - Dezburxoro - E-commerce platform
-      - Nippon - Business website
-      - Limsa - Web application
-      - Fatvo - Legal services
-      - Timeline layout
-   
-   5. Projects Section
-      - 4 portfolio projects
-      - Project descriptions
-      - Technology tags
-      - External links
-      - Hover animations
-   
-   6. Contact Section
-      - Contact form (name, phone, message)
-      - Validation
-      - Success/error messages
-      - Contact information (phone, email, Telegram)
-      - Telegram bot integration ready
+
+1.  Hero Section
+
+    - Name: Davronbek Nabijonov
+    - Title: Fullstack Developer
+    - Call-to-action buttons
+    - Scroll indicator animation
+
+2.  About Section
+
+    - Professional bio
+    - Location information
+    - Statistics cards
+    - Responsive layout
+
+3.  Skills Section
+
+    - Frontend skills (React, Next.js, TypeScript, Tailwind, etc.)
+    - Backend skills (Node.js, Express, Python, REST/GraphQL)
+    - Database skills (MongoDB, PostgreSQL, Firebase, Redis)
+    - Language skills (Uzbek, Russian, English)
+    - Categorized display
+
+4.  Experience Section
+
+    - Dezburxoro - E-commerce platform
+    - Nippon - Business website
+    - Limsa - Web application
+    - Fatvo - Legal services
+    - Timeline layout
+
+5.  Projects Section
+
+    - 4 portfolio projects
+    - Project descriptions
+    - Technology tags
+    - External links
+    - Hover animations
+
+6.  Contact Section
+    - Contact form (name, phone, message)
+    - Validation
+    - Success/error messages
+    - Contact information (phone, email, Telegram)
+    - Telegram bot integration ready
 
 ✅ Navigation & Layout
-   • Sticky navigation bar
-   • Language switcher
-   • Theme toggle
-   • Social links
-   • Footer with quick navigation
-   • Smooth scrolling
+• Sticky navigation bar
+• Language switcher
+• Theme toggle
+• Social links
+• Footer with quick navigation
+• Smooth scrolling
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -101,27 +107,27 @@
 
 app/
 ├── components/
-│   ├── common/
-│   │   ├── Navbar.tsx
-│   │   └── Footer.tsx
-│   └── sections/
-│       ├── HeroSection.tsx
-│       ├── AboutSection.tsx
-│       ├── SkillsSection.tsx
-│       ├── ExperienceSection.tsx
-│       ├── ProjectsSection.tsx
-│       └── ContactSection.tsx
+│ ├── common/
+│ │ ├── Navbar.tsx
+│ │ └── Footer.tsx
+│ └── sections/
+│ ├── HeroSection.tsx
+│ ├── AboutSection.tsx
+│ ├── SkillsSection.tsx
+│ ├── ExperienceSection.tsx
+│ ├── ProjectsSection.tsx
+│ └── ContactSection.tsx
 ├── context/
-│   ├── ThemeContext.tsx
-│   └── LanguageContext.tsx
+│ ├── ThemeContext.tsx
+│ └── LanguageContext.tsx
 ├── i18n/
-│   ├── config.ts
-│   └── useTranslation.ts
+│ ├── config.ts
+│ └── useTranslation.ts
 ├── locales/
-│   ├── en.json (English)
-│   └── uz.json (Uzbek)
+│ ├── en.json (English)
+│ └── uz.json (Uzbek)
 ├── api/
-│   └── contact/route.ts
+│ └── contact/route.ts
 ├── layout.tsx
 ├── page.tsx
 └── globals.css
@@ -133,7 +139,7 @@ app/
 1. START DEVELOPMENT SERVER
    cd /home/zero/Projects/knowladge/portfolio/fd
    npm run dev
-   
+
    Access: http://localhost:3000
 
 2. BUILD FOR PRODUCTION
@@ -141,6 +147,7 @@ app/
    npm run start
 
 3. CONFIGURE TELEGRAM BOT (Optional)
+
    - Create bot with @BotFather on Telegram
    - Get bot token and chat ID
    - Add to .env.local:
@@ -157,34 +164,39 @@ app/
 📄 DOCUMENTATION PROVIDED
 
 ✅ README.md
-   - Complete feature overview
-   - Installation instructions
-   - Configuration guide
-   - Available scripts
-   - Customization options
-   - Deployment guide
+
+- Complete feature overview
+- Installation instructions
+- Configuration guide
+- Available scripts
+- Customization options
+- Deployment guide
 
 ✅ SETUP_GUIDE.md
-   - Quick start instructions
-   - Telegram bot setup
-   - Customization guide
-   - Deployment instructions
-   - Pro tips
-   - Common issues
+
+- Quick start instructions
+- Telegram bot setup
+- Customization guide
+- Deployment instructions
+- Pro tips
+- Common issues
 
 ✅ TECHNICAL.md
-   - Architecture details
-   - State management
-   - API documentation
-   - Performance info
-   - Accessibility info
-   - Security notes
+
+- Architecture details
+- State management
+- API documentation
+- Performance info
+- Accessibility info
+- Security notes
 
 ✅ .env.example
-   - Environment variables template
+
+- Environment variables template
 
 ✅ .env.local
-   - Ready for configuration
+
+- Ready for configuration
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -204,16 +216,19 @@ Build Size: ~50KB (gzipped)
 🎯 NEXT STEPS
 
 1. ✏️ Customize your information
+
    - Update name, title, bio
    - Update skills and experience
    - Update portfolio projects
    - Update contact information
 
 2. 🤖 Setup Telegram Bot (Optional)
+
    - Follow setup guide for details
    - Test contact form
 
 3. 📱 Test All Features
+
    - Toggle dark/light mode
    - Switch languages
    - Test on mobile/tablet/desktop
@@ -221,6 +236,7 @@ Build Size: ~50KB (gzipped)
    - Test all links
 
 4. 🚀 Deploy to Production
+
    - Push to GitHub
    - Connect to Vercel
    - Add environment variables
@@ -245,6 +261,7 @@ Telegram: @ndx_09
 GitHub: https://github.com/DavronNabijonv
 
 Portfolio Projects:
+
 1. Dezburxoro - https://www.dezbuxoro.uz/
 2. Nippon - https://www.nippon.com.uz/
 3. Limsa - https://www.limsa.uz/

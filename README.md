@@ -1,36 +1,211 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FrontendDeveloper (FD) - Personal Portfolio Website
 
-## Getting Started
+A modern, fully responsive personal portfolio website built with Next.js, TypeScript, Tailwind CSS, and Framer Motion. Features dark/light mode toggle, multi-language support (English & Uzbek), and integrated contact form with Telegram bot notifications.
 
-First, run the development server:
+## 🎯 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- ✨ **Modern & Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
+- 🌙 **Dark/Light Mode Toggle** - Smooth theme switching with persistent storage
+- 🌍 **Multi-Language Support** - English and Uzbek with language switcher
+- 🎬 **Smooth Animations** - Powered by Framer Motion for elegant transitions
+- 📧 **Contact Form** - Integrated with Telegram bot for instant notifications
+- ♿ **Accessible** - WCAG compliant with semantic HTML
+- ⚡ **Performance** - Optimized with Next.js 16 and Turbopack
+- 🎨 **Beautiful Typography** - Professional and readable design
+
+## 🏗️ Project Structure
+
+```
+app/
+├── components/
+│   ├── common/
+│   │   ├── Navbar.tsx          # Navigation with language & theme toggle
+│   │   └── Footer.tsx          # Footer with social links
+│   └── sections/
+│       ├── HeroSection.tsx      # Hero with name, title, and CTAs
+│       ├── AboutSection.tsx     # About me with stats
+│       ├── SkillsSection.tsx    # Skills categorized by type
+│       ├── ExperienceSection.tsx # Work experience timeline
+│       ├── ProjectsSection.tsx  # Portfolio projects
+│       └── ContactSection.tsx   # Contact form and info
+├── context/
+│   ├── ThemeContext.tsx         # Dark/light mode state
+│   └── LanguageContext.tsx      # Language selection state
+├── i18n/
+│   ├── config.ts                # i18n configuration
+│   └── useTranslation.ts        # Custom translation hook
+├── locales/
+│   ├── en.json                  # English translations
+│   └── uz.json                  # Uzbek translations
+├── api/
+│   └── contact/
+│       └── route.ts             # Contact form API endpoint
+├── layout.tsx                   # Root layout with providers
+├── page.tsx                     # Home page
+└── globals.css                  # Global styles
+
+public/
+└── images/                      # Image assets
+
+.env.example                      # Environment variables template
+.env.local                        # Local environment config (not committed)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+ or compatible runtime
+- npm or yarn package manager
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. **Navigate to the project:**
+```bash
+cd /home/zero/Projects/knowladge/portfolio/fd
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies:**
+```bash
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Configure environment variables:**
+   - Copy `.env.example` to `.env.local`
+   - Fill in your Telegram bot credentials
 
-## Deploy on Vercel
+4. **Run development server:**
+```bash
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **Open your browser:**
+```
+http://localhost:3000
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Configuration
+
+### Telegram Bot Setup
+
+To enable contact form notifications via Telegram:
+
+1. **Create a Telegram Bot:**
+   - Open Telegram and message [@BotFather](https://t.me/botfather)
+   - Type `/newbot` and follow instructions
+   - Copy your bot token
+
+2. **Get Your Chat ID:**
+   - Message your bot with any text
+   - Visit: `https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates`
+   - Copy the `chat_id` from the response
+
+3. **Set Environment Variables:**
+   - Open `.env.local` and add:
+   ```
+   TELEGRAM_BOT_TOKEN=your_bot_token_here
+   TELEGRAM_CHAT_ID=your_chat_id_here
+   ```
+
+### Personalize Content
+
+Edit `/app/locales/` JSON files to update:
+- Personal information (name, title, location)
+- Bio and about section
+- Skills and expertise
+- Work experience
+- Portfolio projects
+- Contact information
+
+## 📝 Available Scripts
+
+```bash
+# Development server (auto-reload)
+npm run dev
+
+# Production build
+npm run build
+
+# Start production server
+npm run start
+
+# Lint code
+npm run lint
+```
+
+## 🎨 Customization
+
+### Colors & Theme
+
+Edit `app/globals.css` and Tailwind CSS classes in components to customize colors:
+- Primary: Purple (`from-purple-500 to-pink-500`)
+- Dark mode: Gray-900 background
+- Light mode: White background
+
+### Typography
+
+The project uses Google Fonts (Geist) configured in `app/layout.tsx`.
+
+### Animations
+
+Framer Motion animations are configured in each section component. Adjust timing and values in the `variants` objects.
+
+## 🌐 Multi-Language Support
+
+The app includes built-in translations for:
+- **English** - Default language
+- **Uzbek (Cyrillic)** - Secondary language
+
+Language preference is stored in localStorage and persists across sessions.
+
+## 📱 Responsiveness
+
+The design is fully responsive with breakpoints for:
+- Mobile: < 640px
+- Tablet: 640px - 1024px
+- Desktop: > 1024px
+
+## 🚀 Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push code to GitHub
+2. Connect repository to [Vercel](https://vercel.com)
+3. Add environment variables in Vercel dashboard
+4. Deploy automatically
+
+## 🤝 Contact Information
+
+- **Name:** Davronbek Nabijonov
+- **Email:** nabijonovdavronbek619@gmail.com
+- **Phone:** +998 91 741 29 20
+- **Telegram:** [@ndx_09](https://t.me/ndx_09)
+- **GitHub:** [DavronNabijonv](https://github.com/DavronNabijonv)
+- **Location:** Uzbekistan, Fergana
+
+## 📚 Technologies Used
+
+- **Framework:** Next.js 16.1
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **State Management:** Zustand
+- **Icons:** Lucide React
+- **Internationalization:** Custom i18n
+- **Build Tool:** Turbopack
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🔗 Portfolio Projects
+
+- [Dezburxoro](https://www.dezbuxoro.uz/) - E-commerce platform
+- [Nippon](https://www.nippon.com.uz/) - Business website
+- [Limsa](https://www.limsa.uz/) - Web application platform
+- [Fatvo](https://fatvo.uz/lat) - Legal services platform
+
+---
+
+Built with ❤️ using Next.js and modern web technologies
+# portfolio

@@ -22,11 +22,19 @@
   },
   "skills": {
     "title": "Skills & Expertise",
+    "description": "I use the following programming technologies and I am currently open to online collaboration.",
     "frontend": "Frontend",
     "backend": "Backend",
     "databases": "Databases",
     "languages": "Languages",
-    "frontendSkills": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"],
+    "frontendSkills": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Redux"
+    ],
     "backendSkills": ["Node.js", "Express", "Python", "REST APIs", "GraphQL"],
     "databaseSkills": ["MongoDB", "PostgreSQL", "Firebase", "Redis"],
     "languageSkills": ["Uzbek", "Russian", "English"]

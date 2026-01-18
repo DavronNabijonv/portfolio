@@ -63,20 +63,16 @@ export default function Navbar() {
             <div className="flex gap-2 px-3 py-1 rounded-full bg-gray-800">
               <button
                 onClick={() => setLanguage("en")}
-                className={`px-2 py-1 rounded transition-colors ${
-                  language === "en"
-                    ? "bg-purple-500 text-white"
-                    : "text-gray-400"
+                className={`px-2 py-1 rounded transition-colors hover:cursor-pointer ${
+                  language === "en" ? " text-purple-500" : "text-gray-400"
                 }`}
               >
                 EN
               </button>
               <button
                 onClick={() => setLanguage("uz")}
-                className={`px-2 py-1 rounded transition-colors ${
-                  language === "uz"
-                    ? "bg-purple-500 text-white"
-                    : "text-gray-400"
+                className={`px-2 py-1 rounded transition-colors hover:cursor-pointer ${
+                  language === "uz" ? " text-purple-500" : "text-gray-400"
                 }`}
               >
                 UZ
@@ -88,3 +84,5 @@ export default function Navbar() {
     </nav>
   );
 }
+
+

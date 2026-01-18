@@ -33,7 +33,7 @@ export default function Footer() {
               FD
             </h3>
             <p className="text-sm text-gray-400">
-              Fullstack Developer | Web Engineer
+              Frontend Developer | Web Engineer
             </p>
           </motion.div>
 
@@ -44,7 +44,7 @@ export default function Footer() {
             transition={{ delay: 0.1 }}
           >
             <h4 className="font-semibold mb-4 text-white">Navigation</h4>
-            <div className="space-y-2">
+            <div className="space-y-2 flex gap-2 ">
               {["home", "about", "projects", "contact"].map((item) => (
                 <Link
                   key={item}

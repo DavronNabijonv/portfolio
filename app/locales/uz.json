@@ -22,11 +22,19 @@
   },
   "skills": {
     "title": "Qobiliyatlar va Tajribalar",
+    "description": "Men quyidagi dasturlash texnologiyalaridan foydalanaman va hozirda onlayn hamkorlikga ochiqman.",
     "frontend": "Frontend",
     "backend": "Backend",
     "databases": "Ma'lumotlar Bazalari",
     "languages": "Tillar",
-    "frontendSkills": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"],
+    "frontendSkills": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Redux"
+    ],
     "backendSkills": ["Node.js", "Express", "Python", "REST APIs", "GraphQL"],
     "databaseSkills": ["MongoDB", "PostgreSQL", "Firebase", "Redis"],
     "languageSkills": ["O'zbek", "Rus", "English"]
